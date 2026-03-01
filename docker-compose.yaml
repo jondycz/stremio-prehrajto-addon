@@ -1,0 +1,12 @@
+services:
+  stremio-prehrajto-addon:
+    build:
+      context: .
+    ports:
+      - "5000:5000"
+    environment:
+      - PORT=5000
+      #- PREHRAJTO_EMAIL=
+      #- PREHRAJTO_PASSWORD=
+      #- PREHRAJTO_SEARCH_LIMIT=
+    restart: always
